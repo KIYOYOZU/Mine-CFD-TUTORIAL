@@ -1,0 +1,60 @@
+# ==================== CFD教学项目 .gitignore ====================
+# 本小姐为你精心配置的忽略规则！(￣▽￣)ノ
+
+# ==================== 计算结果目录 ====================
+# 排除所有运行生成的结果文件
+results/
+*.mat
+*.png
+*.mp4
+
+# ==================== MATLAB临时文件 ====================
+*.asv              # MATLAB自动保存文件
+*.m~               # MATLAB备份文件
+*.mex*             # MATLAB编译文件
+*.p                # MATLAB加密文件
+slprj/             # Simulink缓存
+*.slxc             # Simulink缓存
+
+# ==================== 编译文档临时文件 ====================
+# LaTeX编译产物
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.pdf              # 编译生成的PDF（源文件不排除）
+
+# ==================== 系统文件 ====================
+.DS_Store          # macOS
+Thumbs.db          # Windows
+desktop.ini        # Windows
+
+# ==================== IDE配置 ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==================== Claude配置 ====================
+.claude/
+.spec-workflow/
+document/
+
+# ==================== 其他临时文件 ====================
+*.tmp
+*.bak
+*.backup
+*.old
+*.pdf              # PDF编译产物和文档（tex源码保留）
+*.zip              # 压缩包
+
+# ==================== 保留文件示例 ====================
+# 以下文件会被提交到仓库：
+# ✓ simplified_couette.m    (主程序)
+# ✓ couette_tutorial.tex    (教学文档LaTeX源码)
+# ✓ README.md               (使用说明)
+# ✓ .gitignore              (本文件)
